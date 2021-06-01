@@ -25,7 +25,7 @@ TextStyle nameTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w600,
 );
 
-TextStyle massagesTextStyle = GoogleFonts.poppins(
+TextStyle messagesTextStyle = GoogleFonts.poppins(
   color: Color(0XFF959CA4),
   fontSize: 12,
   fontWeight: FontWeight.w500,
