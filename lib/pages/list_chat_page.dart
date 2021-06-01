@@ -4,6 +4,14 @@ import 'package:flutter/material.dart';
 class ListChatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    List onlineList = [
+      'assets/add_status.png',
+      'assets/online_one.png',
+      'assets/online_two.png',
+      'assets/online_three.png',
+      'assets/online_four.png',
+    ];
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SafeArea(
@@ -70,6 +78,53 @@ class ListChatPage extends StatelessWidget {
                       ],
                     ),
                     // ONLINE HEADER
+                  ],
+                ),
+              ),
+              // ADD STATUS AND ONLINE USER
+              Container(
+                height: 58,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: onlineList.length,
+                  itemBuilder: (context, index) => Padding(
+                    padding: EdgeInsets.only(
+                      left: (index == 0) ? 30 : 0,
+                      right: (index == onlineList.length - 1) ? 30 : 20,
+                    ),
+                    child: Image.asset(
+                      onlineList[index],
+                      width: 50,
+                      height: 58,
+                    ),
+                  ),
+                ),
+              ),
+              // ADD STATUS AND ONLINE USER
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 22,
+                  left: 30,
+                  right: 30,
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Messages',
+                          style: introductionText.copyWith(fontSize: 20),
+                        ),
+                        Icon(
+                          Icons.search,
+                          color: Color(0XFF959CA4),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
                   ],
                 ),
               ),

@@ -18,3 +18,21 @@ TextStyle buttonText = GoogleFonts.poppins(
   fontSize: 20,
   fontWeight: FontWeight.w600,
 );
+
+TextStyle nameTextStyle = GoogleFonts.poppins(
+  color: Colors.white,
+  fontSize: 14,
+  fontWeight: FontWeight.w600,
+);
+
+TextStyle massagesTextStyle = GoogleFonts.poppins(
+  color: Color(0XFF959CA4),
+  fontSize: 12,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle timeTextStyle = GoogleFonts.poppins(
+  color: Color(0XFF959CA4),
+  fontSize: 10,
+  fontWeight: FontWeight.w400,
+);
