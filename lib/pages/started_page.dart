@@ -1,3 +1,4 @@
+import 'package:chatting_app/pages/list_chat_page.dart';
 import 'package:flutter/material.dart';
 import 'package:chatting_app/theme.dart';
 
@@ -41,7 +42,9 @@ class StartedPage extends StatelessWidget {
                   height: 25,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ListChatPage(),),);
+                  },
                   child: Text(
                     'Let\'s Begin',
                     style: buttonText,
